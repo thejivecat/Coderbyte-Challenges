@@ -7,8 +7,6 @@ function MeanMode(arr) {
     counter[arr[i]] = counter[arr[i]] + 1 || 0;
   }
   let mode = Object.keys(counter).reduce((a, b) => counter[a] > counter[b] ? a : b);
-  console.log(mean, 'mean');
-  console.log(mode, 'mode', typeof mode, 'typeof');
   if (mean == mode) {
     return 1;
   } else {
